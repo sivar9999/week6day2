@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count ="2" parallel="tests" verbose ="4">
+	<test name="CustomerBoarding">
+		<groups>
+			<run>
+				<include name="CustomerCreation" />
+			</run>
+		</groups>
+		<classes>
+			<class name="week6.Day2.CRA.CustomerBoard" />
+		</classes>
+
+	</test> 
+
+	<test name="AccountBoarding">
+		<groups>
+			<run>
+				<include name="Accountcreation" />
+			</run>
+		</groups>
+		<classes>
+			<class name="week6.Day2.CRA.AccountBoard" />
+		</classes>
+	</test>
+</suite> 
